@@ -1,5 +1,186 @@
-html {
-  height: 100%;
-  width: 100%;
+/* =========================
+   General Body Styling
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
+/* =========================
+   Page-specific Backgrounds
+========================= */
+body.index-page {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  /* Blue gradient */
+}
+
+body.duties-page {
+  background: linear-gradient(135deg, #4b134f, #6f1d77, #8e2c97);
+  /* Purple gradient */
+}
+
+body.education-page {
+  background: linear-gradient(135deg, #134f4b, #1d776f, #2c978e);
+  /* Teal gradient */
+}
+
+body.sources-page {
+  background: linear-gradient(135deg, #4f3b13, #77601d, #97722c);
+  /* Brown/orange gradient */
+}
+
+/* =========================
+   Header Styling
+========================= */
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Main Container Styling
+========================= */
+main.container.index-main {
+  background-color: rgba(0, 51, 102, 0.85);
+  /* Semi-transparent dark blue */
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+main.container.duties-main {
+  background-color: rgba(111, 29, 119, 0.85);
+  /* Semi-transparent purple */
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+main.container.education-main {
+  background-color: rgba(29, 119, 111, 0.85);
+  /* Semi-transparent teal */
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+main.container.sources-main {
+  background-color: rgba(119, 96, 29, 0.85);
+  /* Semi-transparent brown/orange */
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+/* =========================
+   Headings
+========================= */
+main h2 {
+  color: #ffcc00;
+  /* Gold/yellow headings */
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* =========================
+   Lists
+========================= */
+ul,
+ol {
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Tables
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+table th {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+table td {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+/* =========================
+   Images
+========================= */
+img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   Links
+========================= */
+a {
+  color: #ffcc00;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Flex Container for Text + Image
+========================= */
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   Responsive Adjustments
+========================= */
+@media (max-width: 768px) {
+  img {
+    float: none;
+    display: block;
+    margin: 15px auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}
